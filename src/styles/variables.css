@@ -1,0 +1,17 @@
+:root {
+  --primary: #C084FC;
+  --primary-light: #E9D5FF;
+  --secondary: #F9A8D4;
+  --secondary-light: #FCE7F3;
+  --accent: #A855F7;
+  --bg-main: #FFFFFF;
+  --bg-soft: #FDF4FF;
+  --text-dark: #3B0764;
+  --text-mid: #6B21A8;
+  --text-soft: #9333EA;
+  --success: #86EFAC;
+  --warning: #FCD34D;
+  --danger: #FCA5A5;
+  --card-bg: #FFF5FF;
+  --border: #E9D5FF;
+}
