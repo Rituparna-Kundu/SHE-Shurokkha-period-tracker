@@ -102,7 +102,7 @@ export default function HygieneGuide() {
         </div>
         <h3 className="text-xl font-bold mb-2 relative z-10">Toxic Shock Syndrome (TSS)</h3>
         <p className="text-sm text-white/90 relative z-10">
-          জ্বর, বমি বমি ভাব, র্যাশ হলে সাথে সাথে ট্যাম্পন/কাপ খুলে ডাক্তারের কাছে যান।
+        
         </p>
       </div>
       </div>
