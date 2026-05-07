@@ -11,6 +11,7 @@ import Register from './pages/Auth/Register';
 import HygieneGuide from './pages/Hygiene/HygieneGuide';
 import Helpline from './pages/Helpline/Helpline';
 
+import Aboutus from './pages/AboutUs/Aboutus';
 // Protected Pages
 import Dashboard from './pages/Dashboard/Dashboard';
 import CycleTracker from './pages/CycleTracker/CycleTracker';
@@ -40,6 +41,10 @@ export const router = createBrowserRouter([
   {
     path: '/helpline',
     element: <Helpline />,
+  },
+  {
+    path: '/aboutus',
+    element: <Aboutus />,
   },
 
   // ── PROTECTED routes (auth required via App.jsx guard) ──
