@@ -15,6 +15,7 @@ const navItems = [
   { to: '/chat',          icon: MessageCircle, label: 'AI চ্যাট',          sublabel: 'AI Chat'      },
   { to: '/helpline',      icon: Phone,         label: 'হেল্পলাইন',         sublabel: 'Helpline'     },
   { to: '/notifications', icon: Bell,          label: 'নোটিফিকেশন',       sublabel: 'Notifications' },
+  { to: '/aboutus', icon: Bell,          label: '',       sublabel: 'About us' },
 ];
 
 export default function Sidebar() {

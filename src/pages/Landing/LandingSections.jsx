@@ -5,6 +5,9 @@ import {
   Droplet, MessageCircle, Sparkles, Heart, Phone,
   ShieldCheck, Lock, CheckCircle, ArrowRight
 } from 'lucide-react';
+import Animation1 from './Animation1';
+
+
 
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 24 },
@@ -158,6 +161,8 @@ function TestimonialsSection() {
   );
 }
 
+
+
 /* ── 5. CTA BANNER ── */
 function CTASection({ isAuthenticated }) {
   return (
@@ -181,7 +186,7 @@ function CTASection({ isAuthenticated }) {
     </section>
   );
 }
-
+<Animation1 />
 /* ── 6. FOOTER ── */
 function Footer() {
   return (
@@ -204,4 +209,4 @@ function Footer() {
 }
 
 /* ── EXPORT ALL ── */
-export { FeaturesSection, HowItWorksSection, TrustSection, TestimonialsSection, CTASection, Footer };
+export { FeaturesSection, HowItWorksSection, TrustSection, TestimonialsSection, CTASection, Footer, Animation1 };

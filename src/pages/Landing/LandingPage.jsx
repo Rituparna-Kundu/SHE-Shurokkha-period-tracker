@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useAuth } from '../../context/AuthContext';
 import { ArrowRight, ShieldCheck, Eye, EyeOff, Star, Droplet, MessageCircle, Heart, Phone, Sparkles } from 'lucide-react';
-import { FeaturesSection, HowItWorksSection, TrustSection, CTASection, Footer } from './LandingSections';
+import { FeaturesSection, HowItWorksSection, TrustSection, CTASection, Footer, Animation1 } from './LandingSections';
 
 // Subtle background blobs
 const FloralBg = () => (
@@ -281,6 +281,7 @@ export default function LandingPage() {
       <HowItWorksSection />
       <TrustSection />
       <CTASection isAuthenticated={isAuthenticated} />
+      <Animation1 />
       <Footer />
     </div>
   );
