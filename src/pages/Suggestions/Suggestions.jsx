@@ -8,9 +8,24 @@ import { motion, AnimatePresence } from 'framer-motion';
 export default function Suggestions() {
   const { getCycleStats } = useCycle();
   const stats = getCycleStats();
-  const phaseKey = stats?.phaseKey || 'menstrual';
   
   const [activeTab, setActiveTab] = useState('food');
+  
+  if (!stats) {
+    return (
+      <div className="flex flex-col items-center justify-center min-h-[60vh] text-center p-6 glass-card border-2 border-dashed border-primary/30">
+        <h2 className="text-xl font-heading font-bold text-text-dark mb-2">পরামর্শ পেতে সাইকেল সেটআপ করুন</h2>
+        <p className="text-sm text-text-mid mb-6 max-w-xs mx-auto">
+          আপনার বর্তমান সাইকেল অনুযায়ী সঠিক পরামর্শ পেতে আগে মাসিকের তারিখ সেটআপ করুন।
+        </p>
+        <Link to="/tracker" className="inline-flex items-center gap-2 bg-primary text-white px-8 py-3 rounded-full font-bold shadow-lg hover:bg-accent transition-all active:scale-95">
+          সেটআপ শুরু করুন
+        </Link>
+      </div>
+    );
+  }
+
+  const phaseKey = stats.phaseKey;
 
   const tabs = [
     { id: 'food', label: 'খাবার' },
@@ -24,7 +39,7 @@ export default function Suggestions() {
   return (
     <div className="space-y-6 pb-10">
       <h1 className="text-2xl font-heading font-bold text-text-dark">পরামর্শ ও গাইডলাইন</h1>
-      <p className="text-text-mid font-ui text-sm">আপনার বর্তমান সাইকেল পর্যায়: <span className="font-bold text-primary">{stats?.currentPhase || 'অজানা'}</span></p>
+      <p className="text-text-mid font-ui text-sm">আপনার বর্তমান সাইকেল পর্যায়: <span className="font-bold text-primary">{stats.currentPhase}</span></p>
 
       {/* Tabs */}
       <div className="flex bg-white rounded-xl p-1 shadow-sm border border-border">
