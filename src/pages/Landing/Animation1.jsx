@@ -134,7 +134,7 @@ const Animation1 = () => {
               >
                 ✨
               </motion.span>
-              শে-সুরক্ষা
+              She-সুরক্ষা
               <motion.span
                 animate={{ scale: [1, 1.2, 1] }}
                 transition={{ duration: 1, repeat: Infinity, delay: 0.5 }}
@@ -160,7 +160,7 @@ const Animation1 = () => {
               variants={textReveal}
               className="text-gray-600 text-lg leading-relaxed max-w-lg mx-auto lg:mx-0"
             >
-              শে-সুরক্ষা একটি নারী-কেন্দ্রিক ডিজিটাল প্ল্যাটফর্ম। 
+              She-সুরক্ষা একটি নারী-কেন্দ্রিক ডিজিটাল প্ল্যাটফর্ম। 
               প্রযুক্তির সহায়তায় আমরা নারীদের জন্য তৈরি করছি একটি নিরাপদ ডিজিটাল পরিবেশ।
             </motion.p>
 
@@ -266,10 +266,10 @@ const Animation1 = () => {
 
               <img
                 src="https://static.vecteezy.com/system/resources/previews/008/084/142/non_2x/multiracial-women-background-free-vector.jpg"
-                alt="শে-সুরক্ষা"
+                alt="She-সুরক্ষা"
                 className="rounded-2xl w-full max-w-md object-cover"
                 onError={(e) => {
-                  e.target.src = "https://placehold.co/500x500/8B5CF6/ffffff?text=শে-সুরক্ষা";
+                  e.target.src = "https://placehold.co/500x500/8B5CF6/ffffff?text=She-সুরক্ষা";
                 }}
               />
 
@@ -301,7 +301,7 @@ const Animation1 = () => {
                 className="absolute bottom-4 left-4 right-4 bg-gradient-to-r from-purple-900/80 to-pink-800/80 backdrop-blur-md rounded-xl px-4 py-3 text-center"
               >
                 <p className="text-white text-sm font-medium">
-                  শে-সুরক্ষা - আপনার নিরাপত্তার সাথী
+                  She-সুরক্ষা - আপনার নিরাপত্তার সাথী
                 </p>
               </motion.div>
             </motion.div>

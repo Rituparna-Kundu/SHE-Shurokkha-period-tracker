@@ -25,12 +25,8 @@ export default function Dashboard() {
   // Basic check for first time user
   if (!cycleData.cycleStartDate) {
     return (
-    return (
       <div 
-        className="flex flex-col items-center justify-center min-h-[70vh] text-center bg-cover bg-center rounded-3xl"
-        style={{ 
-          backgroundImage: "linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('/dashboard-bg.png')",
-        }}
+        className="flex flex-col items-center justify-center min-h-[70vh] text-center rounded-3xl"
       >
         <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+PGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMiIgZmlsbD0iI0MwODRGQyIvPjwvc3ZnPg==" alt="Flower" className="w-24 h-24 mb-6 animate-pulse-soft" />
         <h2 className="text-2xl font-heading font-bold text-primary mb-2">স্বাগতম, {user?.name}!</h2>
@@ -49,12 +45,7 @@ export default function Dashboard() {
     <motion.div 
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
-      className="space-y-6 pb-8 min-h-screen bg-cover bg-center bg-fixed"
-      style={{ 
-        backgroundImage: "linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('/dashboard-bg.png')",
-        margin: "-1.5rem", // Negative margin to bleed to the edges if there's padding in the parent
-        padding: "1.5rem"  // Restore padding for the content
-      }}
+      className="space-y-6 pb-8 min-h-screen"
     >
       {/* Greeting Header */}
       <header className="mb-6">
