@@ -33,13 +33,13 @@ export default function Navbar() {
     : 'U';
 
   return (
-    <header className="md:hidden sticky top-0 z-50 bg-white/80 backdrop-blur-lg border-b border-border shadow-sm">
-      <div className="flex items-center justify-between px-4 h-14">
+    <header className="md:hidden sticky top-0 z-50 bg-white/85 backdrop-blur-xl border-b border-purple-100 shadow-sm">
+      <div className="flex items-center justify-between px-6 h-18">
         {/* Logo */}
-        <Link to="/dashboard" className="flex items-center gap-2 select-none">
-          <span className="text-2xl">🌸</span>
+        <Link to="/dashboard" className="flex items-center gap-2 select-none group">
+          <span className="text-3xl group-hover:scale-110 transition-transform duration-300">🌸</span>
           <div className="leading-tight">
-            <span className="font-heading font-bold text-primary text-base">She-সুরক্ষা</span>
+            <span className="font-heading font-black text-primary text-lg tracking-tight">She-সুরক্ষা</span>
           </div>
         </Link>
 
