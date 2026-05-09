@@ -47,21 +47,24 @@ export default function LandingPage() {
       <FloralBg />
 
       {/* ── TOP NAV ── */}
-      <header className="sticky top-0 z-50 bg-white/85 backdrop-blur-lg border-b border-border shadow-sm">
-        <div className="w-full max-w-screen-lg mx-auto px-5 h-13 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <span className="text-xl">🌸</span>
-            <span className="font-heading font-bold text-primary text-base">She-সুরক্ষা</span>
+      <header className="sticky top-0 z-50 bg-white/85 backdrop-blur-xl border-b border-purple-100 shadow-sm">
+        <div className="w-full max-w-screen-lg mx-auto px-6 h-18 flex items-center justify-between">
+          <div className="flex items-center gap-3 group cursor-pointer">
+            <span className="text-2xl group-hover:scale-110 transition-transform duration-300">🌸</span>
+            <div>
+              <span className="font-heading font-black text-primary text-xl tracking-tight">She-সুরক্ষা</span>
+              <p className="text-[10px] text-purple-400 font-bold -mt-1 uppercase tracking-widest hidden sm:block">তোমার সুরক্ষা</p>
+            </div>
           </div>
           {isAuthenticated ? (
             <Link to="/dashboard"
-              className="flex items-center gap-1.5 bg-gradient-to-r from-primary to-accent text-white text-sm font-bold px-4 py-2 rounded-full shadow-md hover:shadow-lg transition-all">
-              ড্যাশবোর্ড <ArrowRight size={14} />
+              className="flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-500 text-white text-base font-bold px-6 py-2.5 rounded-full shadow-lg shadow-purple-200 hover:scale-105 active:scale-95 transition-all">
+              ড্যাশবোর্ড <ArrowRight size={18} />
             </Link>
           ) : (
-            <div className="flex items-center gap-3">
-              <Link to="/login" className="text-sm font-bold text-text-mid hover:text-primary transition-colors">লগইন</Link>
-              <Link to="/register" className="bg-primary text-white text-sm font-bold px-4 py-2 rounded-full shadow-sm hover:bg-accent transition-all">রেজিস্টার</Link>
+            <div className="flex items-center gap-6">
+              <Link to="/login" className="text-base font-bold text-gray-500 hover:text-purple-600 transition-colors">লগইন</Link>
+              <Link to="/register" className="bg-gradient-to-r from-purple-600 to-pink-500 text-white text-base font-bold px-6 py-2.5 rounded-full shadow-lg shadow-purple-200 hover:scale-105 active:scale-95 transition-all">রেজিস্টার</Link>
             </div>
           )}
         </div>
