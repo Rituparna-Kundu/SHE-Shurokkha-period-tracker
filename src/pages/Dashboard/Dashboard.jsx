@@ -25,7 +25,13 @@ export default function Dashboard() {
   // Basic check for first time user
   if (!cycleData.cycleStartDate) {
     return (
-      <div className="flex flex-col items-center justify-center min-h-[70vh] text-center">
+    return (
+      <div 
+        className="flex flex-col items-center justify-center min-h-[70vh] text-center bg-cover bg-center rounded-3xl"
+        style={{ 
+          backgroundImage: "linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('/dashboard-bg.png')",
+        }}
+      >
         <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+PGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMiIgZmlsbD0iI0MwODRGQyIvPjwvc3ZnPg==" alt="Flower" className="w-24 h-24 mb-6 animate-pulse-soft" />
         <h2 className="text-2xl font-heading font-bold text-primary mb-2">স্বাগতম, {user?.name}!</h2>
         <p className="text-text-mid mb-8 max-w-sm">তোমার সাইকেল ট্র্যাক করতে শুরু করো এবং নিজের স্বাস্থ্য সম্পর্কে আরও জানো।</p>
@@ -43,7 +49,12 @@ export default function Dashboard() {
     <motion.div 
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
-      className="space-y-6 pb-8"
+      className="space-y-6 pb-8 min-h-screen bg-cover bg-center bg-fixed"
+      style={{ 
+        backgroundImage: "linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('/dashboard-bg.png')",
+        margin: "-1.5rem", // Negative margin to bleed to the edges if there's padding in the parent
+        padding: "1.5rem"  // Restore padding for the content
+      }}
     >
       {/* Greeting Header */}
       <header className="mb-6">
@@ -56,7 +67,7 @@ export default function Dashboard() {
       </header>
 
       {/* Cycle Status Card */}
-      <div className="glass-card p-6 bg-gradient-to-br from-primary-light/50 to-white relative overflow-hidden">
+      <div className="glass-card p-6 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-2xl -mr-10 -mt-10"></div>
         <div className="flex items-center justify-between relative z-10">
           <div>
@@ -107,19 +118,19 @@ export default function Dashboard() {
 
       {/* Quick Actions */}
       <div className="grid grid-cols-4 gap-2 md:gap-4">
-        <Link to="/tracker" className="flex flex-col items-center justify-center bg-white border border-border p-3 rounded-2xl shadow-sm hover:shadow-md transition-all group">
+        <Link to="/tracker" className="flex flex-col items-center justify-center glass-card p-3 shadow-sm hover:shadow-md transition-all group">
           <div className="w-10 h-10 bg-secondary-light rounded-full flex items-center justify-center text-text-dark group-hover:scale-110 transition-transform"><CalendarIcon size={20} /></div>
           <span className="text-[10px] md:text-xs font-bold text-text-dark mt-2 text-center leading-tight">ক্যালেন্ডার</span>
         </Link>
-        <Link to="/suggestions" className="flex flex-col items-center justify-center bg-white border border-border p-3 rounded-2xl shadow-sm hover:shadow-md transition-all group">
+        <Link to="/suggestions" className="flex flex-col items-center justify-center glass-card p-3 shadow-sm hover:shadow-md transition-all group">
           <div className="w-10 h-10 bg-success/20 rounded-full flex items-center justify-center text-success group-hover:scale-110 transition-transform"><CheckCircle size={20} /></div>
           <span className="text-[10px] md:text-xs font-bold text-text-dark mt-2 text-center leading-tight">পরামর্শ</span>
         </Link>
-        <Link to="/chat" className="flex flex-col items-center justify-center bg-white border border-border p-3 rounded-2xl shadow-sm hover:shadow-md transition-all group">
+        <Link to="/chat" className="flex flex-col items-center justify-center glass-card p-3 shadow-sm hover:shadow-md transition-all group">
           <div className="w-10 h-10 bg-primary-light rounded-full flex items-center justify-center text-primary group-hover:scale-110 transition-transform"><MessageCircle size={20} /></div>
           <span className="text-[10px] md:text-xs font-bold text-text-dark mt-2 text-center leading-tight">AI চ্যাট</span>
         </Link>
-        <Link to="/helpline" className="flex flex-col items-center justify-center bg-white border border-border p-3 rounded-2xl shadow-sm hover:shadow-md transition-all group">
+        <Link to="/helpline" className="flex flex-col items-center justify-center glass-card p-3 shadow-sm hover:shadow-md transition-all group">
           <div className="w-10 h-10 bg-warning/30 rounded-full flex items-center justify-center text-warning group-hover:scale-110 transition-transform"><Phone size={20} /></div>
           <span className="text-[10px] md:text-xs font-bold text-text-dark mt-2 text-center leading-tight">হেল্পলাইন</span>
         </Link>
@@ -135,7 +146,7 @@ export default function Dashboard() {
       </div>
 
       {/* Motivational Quote */}
-      <div className="bg-primary-light/30 border border-primary-light rounded-2xl p-5 text-center italic">
+      <div className="glass-card p-5 text-center italic bg-primary-light/20">
         <p className="text-sm text-text-mid font-accent">"{quote}"</p>
       </div>
     </motion.div>
