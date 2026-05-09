@@ -79,8 +79,13 @@ export function CycleProvider({ children }) {
     };
   };
 
+  const resetCycleData = () => {
+    setCycleData(defaultCycleData);
+    localStorage.removeItem('she_cycle_data');
+  };
+
   return (
-    <CycleContext.Provider value={{ cycleData, setupCycle, logPeriod, getCycleStats }}>
+    <CycleContext.Provider value={{ cycleData, setupCycle, logPeriod, getCycleStats, resetCycleData }}>
       {children}
     </CycleContext.Provider>
   );
