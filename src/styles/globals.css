@@ -8,6 +8,10 @@
 @layer base {
   body {
     @apply bg-bg-main text-text-dark font-body antialiased selection:bg-primary-light selection:text-text-dark;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('/dashboard-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
   }
   
   h1, h2, h3, h4, h5, h6 {

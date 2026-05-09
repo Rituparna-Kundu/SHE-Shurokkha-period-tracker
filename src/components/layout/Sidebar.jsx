@@ -35,7 +35,7 @@ export default function Sidebar() {
 
   return (
     <>
-      <aside className="hidden md:flex flex-col w-72 h-screen fixed top-0 left-0 z-50 bg-white border-r border-border shadow-[4px_0_32px_rgba(192,132,252,0.10)]">
+      <aside className="hidden md:flex flex-col w-72 h-screen fixed top-0 left-0 z-50 bg-white/40 backdrop-blur-md border-r border-border shadow-[4px_0_32px_rgba(192,132,252,0.10)]">
 
         {/* Logo Header */}
         <div className="flex items-center gap-3 px-5 py-5 border-b border-border bg-gradient-to-br from-primary-light/50 to-secondary-light/30">
