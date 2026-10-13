@@ -6,7 +6,6 @@ She-সুরক্ষা is a web-based period tracker built to help women keep
 
 🔗 **Live demo:** [sheshurokkha-period-tracker.vercel.app](https://sheshurokkha-period-tracker.vercel.app/)
 
-![Screenshot](screenshot.png)
 
 ## About
 She-সুরক্ষা is designed around one idea: your health information should be easy to use and stay in your control. The app is deployed on Vercel and can be used directly from the browser on both mobile and desktop.
