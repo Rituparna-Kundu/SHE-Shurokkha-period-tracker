@@ -1,16 +1,48 @@
-# React + Vite
+# She-সুরক্ষা (She-Shurokkha) – Period Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Your safety, in your hands.**
 
-Currently, two official plugins are available:
+She-সুরক্ষা is a web-based period tracker built to help women keep track of their menstrual cycle in a simple and private way.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔗 **Live demo:** [sheshurokkha-period-tracker.vercel.app](https://sheshurokkha-period-tracker.vercel.app/)
 
-## React Compiler
+![Screenshot](screenshot.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## About
+She-সুরক্ষা is designed around one idea: your health information should be easy to use and stay in your control. The app is deployed on Vercel and can be used directly from the browser on both mobile and desktop.
 
-## Expanding the ESLint configuration
+## Features
+- Period and cycle tracking
+- Easy-to-use, mobile-friendly interface
+- Bilingual branding (Bangla and English)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+- Deployment: Vercel
+- Frontend: Web (HTML, CSS, JavaScript)
+
+## Run Locally
+```bash
+git clone https://github.com/Rituparna-Kundu/YOUR-REPO-NAME.git
+cd YOUR-REPO-NAME
+```
+Then open `index.html` in your browser. If the project uses Node.js, run:
+```bash
+npm install
+npm run dev
+```
+
+## Deployment
+The project is deployed on [Vercel](https://vercel.com). Every push to the `main` branch can be automatically deployed.
+
+## Privacy
+This app deals with personal health information. Please do not share sensitive data you are not comfortable storing.
+
+## Disclaimer
+This app is for tracking and awareness only. It is not a medical device and does not replace advice from a doctor.
+
+## Author
+**Rituparna Kundu**
+GitHub: [@Rituparna-Kundu](https://github.com/Rituparna-Kundu)
+
+## License
+MIT License
